@@ -60,7 +60,7 @@ st.divider()
 
 # ── Load models ───────────────────────────────────────────────────────────────
 with st.spinner("Loading AI models (first load takes ~30 seconds)..."):
-    embedder, llm = get_models(st)
+    embedder = get_models(st) llm = None
 st.success("✅ Models ready!")
 
 # ── Input columns ─────────────────────────────────────────────────────────────
@@ -109,7 +109,7 @@ if analyze_btn:
             matched_kw, missing_kw = keyword_gap(resume_text, jd_text)
 
             # 3 — LLM analysis
-            analysis = analyze_gaps(resume_text, jd_text, llm)
+            analysis = analyze_gaps(resume_text, jd_text, embedder)
 
         # ── Score display ──────────────────────────────────────────────────
         score_class = "score-high" if display_score >= 65 else ("score-mid" if display_score >= 40 else "score-low")
