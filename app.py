@@ -60,7 +60,8 @@ st.divider()
 
 # ── Load models ───────────────────────────────────────────────────────────────
 with st.spinner("Loading AI models (first load takes ~30 seconds)..."):
-    embedder = get_models(st) llm = None
+    embedder = get_models(st)
+    llm = None
 st.success("✅ Models ready!")
 
 # ── Input columns ─────────────────────────────────────────────────────────────
