@@ -21,4 +21,7 @@ def keyword_gap(resume_text, jd_text):
     tech_terms = [
         "python", "sql", "java", "scala", "spark", "pyspark", "kafka",
         "airflow", "dbt", "databricks", "snowflake", "redshift", "bigquery",
-        "aws", "azure", "gcp", "terraform", "docker", "k
+        "aws", "azure", "gcp", "terraform", "docker", "kubernetes", "git",
+        "mlflow", "sagemaker", "bedrock", "langchain", "openai", "huggingface",
+        "rag", "llm", "nlp", "machine learning", "deep learning", "etl", "elt",
+        "data warehouse", "data lake", "lakehouse", "power bi", "tableau"
